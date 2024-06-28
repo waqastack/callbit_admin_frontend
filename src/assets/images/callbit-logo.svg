@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81.961" height="27" viewBox="0 0 81.961 27">
+  <g id="Group_2" data-name="Group 2" transform="translate(-173.961 -449.71)">
+    <g id="Group_1" data-name="Group 1">
+      <g id="logo" transform="translate(31.922 341.42)">
+        <text id="Callbit" transform="translate(164 128.29)" fill="#360707" font-size="20" font-family="Nunito-Bold, Nunito" font-weight="700" letter-spacing="0.01em"><tspan x="0" y="0">Callbit</tspan></text>
+        <path id="Union_40" data-name="Union 40" d="M2954,1653.16v-13.684a4.182,4.182,0,1,1,8.364,0v13.684a4.182,4.182,0,1,1-8.363,0Zm11.3-4.179a4.024,4.024,0,0,1,0-5.691l.223-.223a4.024,4.024,0,0,1,5.69,5.691l-.222.223a4.024,4.024,0,0,1-5.691,0Z" transform="translate(-2811.961 -1525.272)" fill="#155093"/>
+      </g>
+    </g>
+  </g>
+</svg>

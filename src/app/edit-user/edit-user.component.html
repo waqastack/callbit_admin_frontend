@@ -1,0 +1,23 @@
+<body>
+    <div class="login-card d-sm-flex min-vh-100">
+      <div class="right_panel order-sm-2 py-4">
+        <h2 class="text-uppercase text-primary fw-bold mb-5">Change Password</h2>
+   
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="input-group mb-4 input-group-lg">
+            <span class="input-group-text" id="basic-addon1"><img height="26" src="../../assets/images/icons/key-icon.svg"></span>
+            <input type="password" formControlName="password"  id="userPassword" class="form-control rounded-end" placeholder="New Password" required
+            >
+          </div>
+          <!-- <div class="input-group mb-4 input-group-lg">
+            <span class="input-group-text" id="basic-addon1"><img height="26" src="../../assets/images/icons/key-icon.svg"></span>
+            <input type="password" formControlName="password"  id="userPassword" class="form-control rounded-end" placeholder=" Confirm New Password" required
+            >
+          </div> -->
+          <Button  class="btn btn-danger btn-lg my-4" (click)="back()">Back</Button>
+          <Button type="submit" class="btn btn-primary btn-lg my-4">Change</Button>
+        </form>
+      </div>
+    </div>
+    
+  </body>

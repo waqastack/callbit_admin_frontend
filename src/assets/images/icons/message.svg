@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.242" height="36.439" viewBox="0 0 39.242 36.439">
+  <g id="Mail" transform="translate(-4 -6)">
+    <path id="Path_196" data-name="Path 196" d="M40.439,49.177,25.195,39.016l-2.667,1.307a.7.7,0,0,1-.631-.008l-2.58-1.344L4,49.218V50.2a2.1,2.1,0,0,0,2.1,2.1H38.336a2.1,2.1,0,0,0,2.1-2.1ZM18.015,46.7H32.03v1.4H18.015Zm-4.2,4.2h-2.8V49.5h2.8Zm0-4.2h2.8v1.4h-2.8Zm21.022,4.2H15.212V49.5H34.833Z" transform="translate(0 -9.867)" fill="#fff"/>
+    <path id="Path_197" data-name="Path 197" d="M4,44.126l13.9-9.3L4,27.588Z" transform="translate(0 -6.46)" fill="#fff"/>
+    <path id="Path_198" data-name="Path 198" d="M4,24.336l18.229,9.492L26.774,31.6A11.908,11.908,0,0,1,20.854,22H6.1A2.1,2.1,0,0,0,4,24.1Z" transform="translate(0 -4.788)" fill="#fff"/>
+    <path id="Path_199" data-name="Path 199" d="M50.112,33.938a11.826,11.826,0,0,1-12.063,2.01l-1.725.846,13.788,9.192Z" transform="translate(-9.673 -8.361)" fill="#fff"/>
+    <path id="Path_200" data-name="Path 200" d="M40.511,6A10.511,10.511,0,1,0,51.022,16.511,10.511,10.511,0,0,0,40.511,6Zm-.906,15.211a.7.7,0,0,1-.991,0L34.65,17.247l.991-.991,3.469,3.469,7.432-7.433.992.992Z" transform="translate(-7.781)" fill="#fff"/>
+  </g>
+</svg>

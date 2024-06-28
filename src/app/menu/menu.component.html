@@ -1,0 +1,67 @@
+<!-- WRAPPER -->
+<div id="wrapper">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top top-nav shadow-sm">
+    <div class="container-fluid">
+      <div class="navbar-btn me-3">
+        <button type="button" class="btn-toggle-fullwidth"><img src="assets/images/toggle-icon.svg"></button>
+      </div>
+      <a class="navbar-brand" routerLink="dashboard"><img  height="36" src="assets/images/callbit-logo.svg"></a>
+     
+      <form class="d-flex me-auto mb-2 mb-lg-0 align-items-center search-bar">
+      <!-- <i class="fas fa-search text-primary fa-lg"></i>
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+      </form>
+      <ul class="navbar-nav align-items-center">
+        <!-- <li class="nav-item notifications me-2">
+        <a class="nav-link" href="#">
+          <i class="fas fa-envelope fa-lg"></i>
+          <span class="badge">4</span>
+        </a>
+        </li>
+        <li class="nav-item notifications me-3">
+        <a class="nav-link" href="#">
+          <i class="fas fa-bell fa-lg"></i>
+          <span class="badge">4</span>
+        </a>
+        </li> -->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img class="user-avatar" src="assets/images/user1.png">
+          Mathew
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li> -->
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" style="cursor: pointer;" (click)="logout()">Logout</a></li>
+        </ul>
+        </li>
+       
+      </ul>
+      
+     
+    </div>
+    </nav>
+<div id="sidebar-nav" class="sidebar">
+  <div class="sidebar-scroll">
+    <nav class="navbar">
+      <ul class="nav">
+        <li class="nav-item"><a routerLink="dashboard" routerLinkActive="active" class="nav-link"><i class="icon-home"></i> <span>Dashboard</span></a></li>
+        <li class="nav-item"><a routerLink="clients" routerLinkActive="active" class="nav-link"><i class="icon-users"></i> <span>Clients</span></a></li>
+        <li class="nav-item"><a routerLink="campaigns" routerLinkActive="active" class="nav-link"><i class="icon-campaigns1"></i> <span>Campaigns</span></a></li>
+        <li class="nav-item"><a routerLink="call-centre" routerLinkActive="active" class="nav-link"><i class="icon-call-center"></i> <span>Call Centre</span></a></li>
+        <!-- <li class="nav-item"><a routerLink="disputes" routerLinkActive="active" class="nav-link"><i class="icon-dispute"></i> <span>Disputes</span></a></li> -->
+        <li class="nav-item"><a routerLink="contracts" routerLinkActive="active" class="nav-link"><i class="icon-dispute"></i> <span>Contracts</span></a></li>
+        <li class="nav-item"><a routerLink="campaignamount" routerLinkActive="active" class="nav-link"><i class="icon-dispute"></i> <span>Recieved Amount</span></a></li>
+        <li class="nav-item"><a routerLink="sendamount" routerLinkActive="active" class="nav-link"><i class="icon-dispute"></i> <span>Send Amount</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+
+<!-- <footer>
+  <p class="copyright">© 2021 - The Callbit All Right Reserved</p>
+</footer> -->

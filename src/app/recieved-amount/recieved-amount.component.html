@@ -1,0 +1,101 @@
+
+<div class="main">
+
+  <div class="main-content">
+    <h4 class="mb-3">Total Recieved Amount To Call Bit: {{totalRecievedAmount}}</h4>
+
+  <p><b>Total Record</b>:{{totalRecord}}</p>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="input-group">
+                <div class="input-group-text"><i class="fas fa-search"></i></div>
+                <input type="text" class="form-control" [(ngModel)]="filter" aria-label="Search" placeholder="Search by any order paramete...">
+              </div>
+            </div>
+
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th>
+                      Campaign Title
+                    </th>
+                    <th>
+                      Client
+                    </th>
+                    <th>
+                      Call Center
+                    </th>
+                    <th>
+                      Recieved Amount
+                    </th>
+                    <th>
+                      CallBit Charges(3%)
+                    </th>
+                    <th>
+                      Call Center Amount
+                    </th>
+                    <th>
+                      Brand
+                    </th>
+                    <th>
+                      Client Email
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let datadb of _campaignRecievedAmountRsp | filter:filter">
+                    <td width="30">
+                      {{datadb.compaignTitle}}
+                    </td>
+                    <td>
+                      {{datadb.client}}
+                    </td>
+                    <td>
+                      {{datadb.callCenter}}
+                    </td>
+                    <td>
+                      {{datadb.recievedAmount}}
+                    </td>
+                    <td>
+                      {{datadb.callBitCharges}}
+                    </td>
+
+                    <td>
+                      {{datadb.callCenterAmount}}
+                    </td>
+                    <td>
+                      {{datadb.Brand}}
+                    </td>
+                    <td>
+                      {{datadb.clientEmail}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <th>Total: {{totalRecievedAmount}}</th>
+                    <th>Total: {{totalCallBitCharges}}</th>
+                    <th>Total: {{totalCallCenterAmount}}</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

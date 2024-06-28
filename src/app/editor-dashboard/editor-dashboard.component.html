@@ -1,0 +1,197 @@
+<div class="main">
+		
+    <div class="main-content">
+        <h4 class="mb-3">Team Member Dashboard</h4>
+        <div class="row mb-4 team-dashboard">
+            <div class="col-xl-3 col-lg-6 col-md-6 mb-3 mb-xl-0">
+                <div class="card card-1 ">
+                    <div class="card-header">
+                       <h6 class="sub-heading">Users</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-baseline">
+                            <i class="icon-users  text-white"></i>
+                            <span  class="card-count">{{Data_countClients.length}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 mb-3 mb-xl-0">
+                <div class="card card-2">
+                    <div class="card-header">
+                       <h6 class="sub-heading">Total Call Centers</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-baseline">
+                            <i class="icon-message text-white"></i>
+                            <span  class="card-count">{{DataCountCallCentre.length}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="card card-3">
+                    <div class="card-header">
+                       <h6 class="sub-heading">Total campgains</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-baseline">
+                            <i class="icon-dispute text-white"></i>
+                            <span  class="card-count">{{data.length}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6">
+                <div class="card card-4">
+                    <div class="card-header">
+                       <h6 class="sub-heading">Submitted proposals</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-baseline">
+                            <i class="icon-money text-white"></i>
+                            <span  class="card-count">60</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+
+
+                      <div class="row">
+                          <div class="col-lg-4">
+                            <!-- <h6 class="sub-heading">Document Sent Details</h6> -->
+                          </div>
+                          <div class="col-lg-8">
+                                <div class="row text-end">
+                                    <!-- <div class="col"><div class="input-group col-auto">
+                                        <div class="input-group-text bg-white"><i class="fas fa-search text-primary"></i></div>
+                                        <input type="text" class="form-control" placeholder="Search by any order paramete...">
+                                      </div>
+                               </div> -->
+                                     <!-- <div class="col-auto">
+                                         <button class="btn btn-primary">Export</button>
+                                     </div> -->
+                                </div>
+                        </div>
+                      </div>
+
+                      
+
+                     
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+
+
+                            
+                            <div class="col-md-4">
+                                    <div class="input-group">
+                                      <div class="input-group-text"><i class="fas fa-search"></i></div>
+                                      <input type="text" class="form-control"  [(ngModel)]="filter" aria-label="Search" placeholder="Search by any order paramete...">
+                                    </div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <!-- <div class="mb-3">
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Categories</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                  </div> -->
+                              </div>
+                              <div class="col-md-3">
+                                <!-- <div class="mb-3">
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Date range</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                  </div> -->
+                              </div>
+                              <div class="col-md-2">
+                                <!-- <div class="mb-3">
+                                    <select class="form-select" id="autoSizingSelect">
+                                        <option selected>Status</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                  </div> -->
+                              </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table mb-0"> 
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Sr.
+                                        </th>
+                                        <th>
+                                            Created
+                                        </th>
+                                        <th>
+                                            Customer
+                                        </th>
+                                        <th>
+                                            Campaign
+                                        </th>
+                                        <th>
+                                            Price
+                                        </th>
+                                        <th>
+                                            Status
+                                        </th>
+                                        <th>
+                                            Action
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr  *ngFor="let datadb of data  | filter:filter | paginate: { itemsPerPage: count, currentPage: p }">
+                                        <td width="30">
+                                            {{datadb.id}}
+                                        </td>
+                                        <td>
+                                            {{datadb.createdDate}}
+                                        </td>
+                                        <td>
+                                            {{datadb.name}}
+                                        </td>
+                                        <td>
+                                            {{datadb.campaignText}}
+                                        </td>
+                                        <td>
+                                            {{datadb.price}}
+                                        </td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-info">Complete</span>
+                                        </td>
+                                        <td class="text-center">
+                                           <button [routerLink]="['details', datadb.id]" class="btn btn-outline-primary btn-sm" style="line-height: 10px;" >View Details</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav class="mt-3 float-end">
+                            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+                          </nav>
+                    
+                    
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

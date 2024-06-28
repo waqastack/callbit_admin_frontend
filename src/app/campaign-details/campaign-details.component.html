@@ -1,0 +1,175 @@
+    <div class="main">
+    
+        <div class="main-content">
+            <h4 class="mb-3">Campaign Detail</h4>
+            
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                           <h6 class="sub-heading">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                  <li class="breadcrumb-item"><a (click)="Route()">Campaigns </a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">Campaign Detail</li>
+                                </ol>
+                              </nav>
+                           </h6>
+                          
+                        </div>
+                        <div class="card-body">
+                            
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="align-self-baseline fa-2x fa-long-arrow-alt-left fas text-muted me-2"></i>
+                                <h4 class="text-primary me-4">Final Expense</h4>
+                                <span class="badge rounded-pill bg-info py-2 px-3">Running</span>
+                            </div>
+
+              <div class="Campaign-details-tabs">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Overview</button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Applicent Details</button>
+                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Proposals Details</button>
+                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Activity</button>
+
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row">
+                             <div class="col-md-6">
+                                 <div class="card">
+                                     <div class="card-body pt-0">
+                                            <div class="d-flex mb-4 align-items-end">
+                                                <h5 class="text-primary mb-0 fw-bold me-2">Received Purposals:</h5>
+                                                <p class="mb-0 text-muted">5 Purposals</p>
+                                            </div>
+                                        
+                                            <p>Deliver great work. Get notified when you get an order and use our system to discuss details with customers.</p>
+                                        
+                                            <div class="table-responsive">
+                                                <table class="table table-striped mb-0"> 
+                                                    
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                Location:
+                                                            </td>
+                                                            <td>
+                                                                Pakistan
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Campaign ID:
+                                                            </td>
+                                                            <td>
+                                                                {{compaign[0].id}}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Applicent Details:
+                                                            </td>
+                                                            <td>
+                                                                Joseph Dearborn
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Created
+                                                            </td>
+                                                            <td>
+                                                                {{compaign[0].createdDate}}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Start Time:
+                                                            </td>
+                                                            <td>
+                                                                08 Aug 2020, 14:00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                End Time:
+                                                            </td>
+                                                            <td>
+                                                                12 Des 2020, 14:00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Sales Required:
+                                                            </td>
+                                                            <td>
+                                                                $10
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Sale Price:
+                                                            </td>
+                                                            <td>
+                                                                {{compaign[0].price}}
+                                                            </td>
+                                                        </tr>
+                                                    
+                                                    
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body pt-0">
+                                           <h5 class="text-primary mb-4 fw-bold">{{compaign[0].payByText}}</h5>
+                                           <p>Pay by Sales to scale up your Campaign Up and down</p>
+                                           <div class="row">
+                                               <div class="col-md-4">
+                                                 <div class="d-flex mb-2">
+                                                   <div class="me-3">
+                                                      <i class="fas fa-check-circle text-primary"></i>
+                                                       <span class="text-muted">{{compaign[0].payPerText}}</span>
+                                                   </div>
+                                               </div>
+                                               <p class="small text-muted">Campaign Length</p>
+                                               </div>
+                                               <div class="col-md-4">
+                                                 <div class="d-flex mb-2">
+                                                   <div class="me-3">
+                                                      <i class="fas fa-check-circle text-primary"></i>
+                                                       <span class="text-muted">7 Days</span>
+                                                   </div>
+                                               </div>
+                                               <p class="small text-muted">Time Duration</p>
+                                               </div>
+                                           </div>
+                                           <h5 class="text-primary fw-bold">Description</h5>
+                                           <p>
+                                           {{compaign[0].description}}
+                                            </p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                  </div>
+              </div>
+                            
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
